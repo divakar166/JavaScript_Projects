@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>QUIZ GAMES</h2>
+        </div>
+        <div class="inner_box">
+            <div class="quiz_select hide">
+                <div class="col-1">
+                    <div class="box" onclick="selectMode('arts')">arts</div>
+                    <div class="box" onclick="selectMode('literature')">literature</div>
+                    <div class="box" onclick="selectMode('movies')">movies</div>
+                    <div class="box" onclick="selectMode('film')">film</div>
+                    <div class="box" onclick="selectMode('food')">food</div>
+                </div>
+                <div class="col-2">
+                    <div class="box" onclick="selectMode('drink')">drink</div>
+                    <div class="box" onclick="selectMode('general_knowledge')">general knowledge</div>
+                    <div class="box" onclick="selectMode('geography')">geography</div>
+                    <div class="box" onclick="selectMode('history')">history</div>
+                    <div class="box" onclick="selectMode('music')">music</div>
+                </div>
+                <div class="col-3">
+                    <div class="box" onclick="selectMode('science')">science</div>
+                    <div class="box" onclick="selectMode('society')">society</div>
+                    <div class="box" onclick="selectMode('culture')">culture</div>
+                    <div class="box" onclick="selectMode('sports')">sports</div>
+                </div>
+            </div>
+            <div class="diff_select hide">
+                <div class="box level_box" id="easy">Easy</div>
+                <div class="box level_box" id="med">Medium</div>
+                <div class="box level_box" id="hard">Hard</div>
+            </div>
+            <div class="game_box">
+                <div class="quiz_type_title" id="quizTypeTitle">Geography</div>
+                <div class="ques_box">
+                    <div class="ques">
+                        <span id="ques_no">Q1.</span>
+                        <p>The words "Myrrh is mine, its bitter perfume breathes of life, of gathering gloom___" come from which Christmas carol?</p>
+                    </div>
+                    <div class="timer" id="timer"></div>
+                </div>
+                <div class="option_box">
+                    <div class="row_1">
+                        <div class="option opt_a">Good King Wenceslas</div>
+                        <div class="option opt_b">Once In Royal David's City</div>
+                    </div>
+                    <div class="row_2">
+                        <div class="option opt_c">We Three Kings</div>
+                        <div class="option opt_d">I Saw Three Ships</div>
+                    </div>
+                </div>
+                <div class="ques_counter">
+                    <span id="ques_attempted"></span>/<span id="total_ques"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
